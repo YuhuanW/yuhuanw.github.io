@@ -10,11 +10,32 @@ body {
 
 /* Header */
 header {
-    background-color: #1a73e8;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #2c8c93;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-photo-container {
+  flex: 1; /* 图片占据1份 */
+  padding-right: 20px;
+}
+
+.profile-photo {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-content {
+  flex: 2; /* 文字内容占据2份 */
+  color: white;
 }
 
 header h1 {
