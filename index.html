@@ -17,9 +17,26 @@
             background-color: #005f73;
             color: white;
             padding: 20px 0;
-            text-align: center;
         }
-        header h1 {
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .profile-photo-container {
+            margin-right: 20px; /* 确保图片和文本之间有间隙 */
+        }
+        .profile-photo {
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+        }
+        .text-content {
+            color: white;
+        }
+        .text-content h1 {
             margin: 0;
         }
         nav {
@@ -61,12 +78,12 @@
 <header>
     <div class="header-container">
         <div class="profile-photo-container">
-            <h1>Yuhuan Wang</h1>
-            <p>Undergraduate in Automation | Jilin University</p>
-            <img src="img/profile.jpg" alt="Yuhuan Wang" class="profile-photo" width="300" height="400">
+            <img src="img/profile.jpg" alt="Yuhuan Wang" class="profile-photo">
         </div>
         <div class="text-content">
-            <h1>About Me</h1>
+            <h1>Yuhuan Wang</h1>
+            <p>Undergraduate in Automation | Jilin University</p>
+            <h2>About Me</h2>
             <p>I am passionate about robotics and deep learning, with a particular interest in autonomous driving and medical robots.</p>
         </div>
     </div>
