@@ -16,25 +16,25 @@ header {
 
 .header-container {
   display: flex;
-  align-items: center;
+  justify-content: flex-start; /* 确保内容靠左 */
+  align-items: center; /* 确保垂直居中 */
   max-width: 900px;
   margin: 0 auto;
 }
 
 .profile-photo-container {
-  flex: 1; /* 图片占据1份 */
+  flex: 0 0 300px; /* 图片固定宽度，防止其过大 */
   padding-right: 20px;
 }
 
 .profile-photo {
   border-radius: 10px;
   width: 100%;
-  max-width: 300px;
   height: auto;
 }
 
 .text-content {
-  flex: 2; /* 文字内容占据2份 */
+  flex: 1; /* 文字内容占据剩余空间 */
   color: white;
 }
 
